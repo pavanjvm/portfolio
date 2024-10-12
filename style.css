@@ -316,9 +316,13 @@ section {
 
 /* EXPERIENCE SECTION */
 
+
 #experience {
   position: relative;
   padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .experience-sub-title {
@@ -330,31 +334,37 @@ section {
 }
 
 .experience-details-container {
-  display: flex;
-  justify-content: space-evenly; /* Spread the two columns evenly */
-  flex-direction: row;
-  gap: 3rem;
-}
-
-#experience .article-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates two items per row */
-  grid-gap: 1rem; /* Adjust the space between items */
-  justify-content: center;
+  grid-template-columns: repeat(2, 1fr); /* Two even columns */
+  gap: 2rem; /* Space between items */
+  justify-content: center; /* Center align the grid */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit max width */
+  padding: 1rem; /* Padding for spacing */
 }
 
 article {
-  display: flex;
-  align-items: center;
-  width: 100%; /* Make article take full space */
-  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #dcdcdc; /* Light border */
+  border-radius: 0.5rem; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background */
+  display: flex; /* Align items inside */
+  align-items: center; /* Center items */
+  gap: 1rem; /* Space between icon and text */
 }
+
 
 article .icon {
   cursor: default;
   width: 1.5rem;
   height: 1.5rem;
 }
+
+/* Media query for smaller screens */
+
+
+
+
 
 /* PROJECTS SECTION */
 
